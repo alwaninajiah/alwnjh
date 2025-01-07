@@ -1,0 +1,305 @@
+<html>
+<head>
+  
+    <title>Thank You!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="photo/star.png" type="image/x-icon">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Allison&family=Badeen+Display&family=Chicle&family=Climate+Crisis&family=DM+Serif+Display:ital@0;1&family=Damion&family=Monofett&family=Press+Start+2P&family=Rubik+Bubbles&family=Spicy+Rice&family=Tiny5&display=swap" rel="stylesheet">	
+
+
+	<style>
+ 	
+  	.bg-image {
+  background-image: url("bluebg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    z-index: -1;
+}
+  
+	#header {
+            position: fixed;
+			background: #b1d7fe;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			display: flex;
+    justify-content: space-between; 
+    align-items: center;
+        }
+
+        /* logo and nav */
+        #header .logo {
+            display: inline-block;
+            font-family: "Akaya Kanadaka", serif;
+			  font-weight: 400;
+			  font-style: normal;
+			  font-size: 60px;
+			  color: white;
+			  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
+			  cursor: pointer;
+          
+        }
+
+        #header .nav-links {
+            display: flex;
+			flex-wrap: wrap;
+            float: right;
+            margin-right: 30px;
+			justify-content: center;
+			align-items: center;
+		
+        }
+
+        #header .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+		
+		/* nav */
+        nav a {
+			font-family: "Akaya Kanadaka", serif;
+			text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 20px;
+            display: inline-block;
+            border-radius: 5px; 
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Button animation on hover */
+        nav a:hover, .dropdown:hover .dropbtn {
+            transform: scale(1.1);  
+            background-color: #40A9DE;  
+        }
+
+        nav a:active {
+            transform: scale(0.9); 
+            background-color: #5186E8; 
+        }
+
+				.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+
+        .slidecontainer {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #555;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 25px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.8;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        /* Custom thumb with emoji */
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 40px;
+            height: 40px;
+            background: url('smile.png') no-repeat center center;
+            background-size: contain;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 40px;
+            height: 40px;
+            background: url('smile.png') no-repeat center center;
+            background-size: contain;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        /* Color change */
+        .color-1 { background: #f5a623; }   /* Orange */
+        .color-2 { background: #ffcc00; }   /* Yellow */
+        .color-3 { background: #8ace00; }   /* Light Green */
+        .color-4 { background: #04aa6d; }   /* Dark Green */
+        .color-5 { background: #00aaff; }   /* Blue */
+        .color-6 { background: #9000ff; }   /* Purple */
+
+        .rating-value {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        /* Animationrating */
+        .animation-container {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .emoji-animation {
+            font-size: 48px;
+            animation: bounce 0.6s ease-out;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+</style>
+
+</head>
+<body style="background: linear-gradient(to bottom, #ADD8E6, #FFFFFF);">
+
+<div class="bg-image"></div>
+        
+    <div id="header">
+        <a href="index.html"><span class="logo"> <marquee width="500" scrollamount="2" scrolldelay="7" behavior="alternate" > 
+		✭ alwani najiah ✭
+		</marquee> </span><a href="index.html">
+		<header>
+        <nav>
+        <div class="nav-links">
+            <a href="index.html">✴ Home</a> 
+			<a href="aboutme.html">✴ About Me</a>
+            <a href="hobby.html">✴ Hobby</a>
+            <a href="gallery.html">✴ Gallery</a>
+            <a href="contact.html">✴ Contact Me</a>
+			 </nav>
+    </header>
+        </div>
+    </div>
+       
+<h1>THANK YOU!</h1>
+
+<div class="slidecontainer">
+    <h2><u>Rate Your Experience</u></h2><br>
+    
+    <input type="range" min="0" max="100" value="50" class="slider" id="ratingSlider">
+    <div class="rating-value">Rating: <span id="ratingValue">50</span></div>
+
+    
+    <div class="animation-container" id="animationContainer">
+        <span class="emoji-animation">
+		<img src="smile.png" alt="child" width="170" height="170" align="center" class="img">
+		</span>
+        <p>Thank you for your rating!</p>
+    </div>
+</div>
+
+<script>
+    var slider = document.getElementById("ratingSlider");
+    var output = document.getElementById("ratingValue");
+    var animationContainer = document.getElementById("animationContainer");
+
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+
+        if (this.value < 20) {
+            slider.className = 'slider color-1'; // Orange
+        } else if (this.value < 40) {
+            slider.className = 'slider color-2'; // Yellow
+        } else if (this.value < 60) {
+            slider.className = 'slider color-3'; // Light Green
+        } else if (this.value < 80) {
+            slider.className = 'slider color-4'; // Dark Green
+        } else if (this.value < 90) {
+            slider.className = 'slider color-5'; // Blue
+        } else {
+            slider.className = 'slider color-6'; // Purple
+        }
+    }
+
+   
+    slider.onchange = function() {
+        
+        animationContainer.style.display = 'block';
+
+        
+        slider.disabled = true;
+    }
+</script>
+
+    <p align="center">
+      <a href="scheme.pdf" target="blank">Download</a></p>
+
+</body>
+</html>

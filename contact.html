@@ -1,0 +1,299 @@
+<html>
+<head>
+  
+    <title>Contact Me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="photo/star.png" type="image/x-icon">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Allison&family=Badeen+Display&family=Chicle&family=Climate+Crisis&family=DM+Serif+Display:ital@0;1&family=Damion&family=Monofett&family=Press+Start+2P&family=Rubik+Bubbles&family=Spicy+Rice&family=Tiny5&display=swap" rel="stylesheet">	
+
+	<style>
+	
+	
+  	.bg-image {
+  background-image: url("bluebg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    z-index: -1;
+}
+  
+	#header {
+            position: fixed;
+			background: #b1d7fe;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			display: flex;
+    justify-content: space-between; 
+    align-items: center;
+	
+        }
+
+        /* logo and nav */
+        #header .logo {
+            display: inline-block;
+            font-family: "Akaya Kanadaka", serif;
+			  font-weight: 400;
+			  font-style: normal;
+			  font-size: 60px;
+			  color: white;
+			  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
+			  cursor: pointer;
+			  
+          
+        }
+
+        #header .nav-links {
+            display: flex;
+			flex-wrap: wrap;
+            float: right;
+            margin-right: 30px;
+			justify-content: center;
+			align-items: center;
+			background-color: #b1d7fe;
+		
+        }
+
+        #header .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+		
+		/* nav */
+        nav a {
+			font-family: "Akaya Kanadaka", serif;
+			text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgba(0, 0, 0, 0.5);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 20px;
+            display: inline-block;
+            border-radius: 5px; 
+			background-color: #b1d7fe;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Button animation on hover */
+        nav a:hover, .dropdown:hover .dropbtn {
+            transform: scale(1.1);  
+            background-color: #40A9DE;  
+        }
+
+        nav a:active {
+            transform: scale(0.9); 
+            background-color: #5186E8; 
+        }
+
+				.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+        body {
+            margin-top: 60px; 
+        }
+		
+		header {
+            background-color: #b1d7fe;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 150px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ADD8E6;
+            color: white;
+            margin-top: 10px;
+        }
+		
+		select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+</style>
+
+</head>
+<body style="background: linear-gradient(to bottom, #ADD8E6, #FFFFFF);">
+
+<div class="bg-image"></div>
+        
+    <div id="header">
+        <a href="index.html"><span class="logo"> <marquee width="500" scrollamount="2" scrolldelay="7" behavior="alternate" > 
+		✭ alwani najiah ✭
+		</marquee> </span><a href="index.html">
+		<header>
+        <nav>
+        <div class="nav-links">
+            <a href="index.html">✴ Home</a> 
+			<a href="aboutme.html">✴ About Me</a>
+            <a href="hobby.html">✴ Hobby</a>
+            <a href="gallery.html">✴Gallery</a>
+            <a href="contact.html">✴Contact Me</a>
+			 </nav>
+    </header>
+        </div>
+    </div>
+        
+        <!-- separator -->
+        <tr>
+            <td colspan="2" height="150px"></td>
+        </tr>
+
+
+    <div class="container">
+        <form action="your-form-handler-url" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+			
+			<label for="state">State:</label>
+		  <select id="country" name="country">
+		  <option value="Select">Select your state</option>
+			<option value="Joh">Johor</option>		
+			<option value="Ked">Kedah</option>
+			<option value="Kel">Kelantan</option>
+			<option value="Kul">Kuala Lumpur</option>
+			<option value="Mel">Melaka</option>
+			<option value="Neg">Negeri Sembilan</option>
+			<option value="Pah">Pahang</option>
+			<option value="Pen">Penang</option>
+			<option value="Per">Perak</option>
+			<option value="Perl">Perlis</option>
+			<option value="Sab">Sabah</option>
+			<option value="Sar">Sarawak</option>
+			<option value="Sel">Selangor</option>
+			<option value="Ter">Terengganu</option>
+
+		  </select>
+		
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <p><input type="file" name="gambar"></p>
+			
+			<button type="submit">Send Message</button>
+			
+			
+			
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Alwani Najiah. All rights reserved.</p>
+    </div>
+
+<script>
+    // After form submission, you can redirect to a thank-you page
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevents the default form submission
+        // Submit form data using AJAX or just redirect
+        window.location.href = "thankyou.html"; // Redirect to a "Thank You" page
+    });
+</script>
+
+</body>
+</html>

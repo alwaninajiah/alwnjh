@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get ready</title>
+    <style>
+        /* Full-page strobing effect */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .strobe {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            animation: strobe 0.2s infinite; /* Faster strobe speed */
+        }
+
+        /* Strobing animation: Alternate between #8ACE00 and black */
+        @keyframes strobe {
+            0% { background-color: black; }
+            50% { background-color: #8ACE00; }
+            100% { background-color: black; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="strobe"></div>
+
+ <script>
+        // Redirect to homepage after 3 seconds
+        setTimeout(function() {
+            window.location.href = "hobby2.html"; // Change to your homepage path
+        }, 1000);
+    </script>
+	
+</body>
+</html>
